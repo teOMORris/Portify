@@ -33,8 +33,18 @@
     background-color: rgb(2, 25, 235);
 }
 
-.hello #welcomeText{
+.hello #welcome_img {
+    overflow: hidden;
+    float: right;
+    padding: 100px;
+    width: 40%;
+    aspect-ratio: true;
+}
+
+
+.hello #welcome_text{
     font-family: 'Exo 2', sans-serif;
+    float: left;
     padding: 100px;
     overflow: none;
     width: 400px;
@@ -56,5 +66,13 @@
     .hello #welcomeText{
         padding: 40px;
     }
+
+    .hello #welcome_img {
+        float: left;
+        padding: 100px;
+        width: 80%;
+        aspect-ratio: true;
+    }
 }
+
 
