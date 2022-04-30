@@ -1,6 +1,8 @@
 var text = document.getElementById("welcome_text");
 var img = document.getElementById("welcome_img");
 
+text.style.fontSize = "320%";
+
 function Animation(object)
 {
     object.onmousemove = function() {
