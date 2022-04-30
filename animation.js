@@ -4,12 +4,12 @@ var img = document.getElementById("welcome_img");
 function Animation(object)
 {
     object.onmousemove = function() {
-        Resize("70px", "1s", "43%",object);
+        Resize("350%", "1s", "43%",object);
     }
 
     object.onmouseleave = function()
     {
-        Resize("50px", "1s" , "40%", object);
+        Resize("320%", "1s" , "40%", object);
     }
 }
 
