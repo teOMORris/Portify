@@ -30,13 +30,14 @@
 
 .header a.active{
     font-weight: bold;
-    background-color: rgb(2, 25, 235);
+    background-color: #4502e0;
 }
 
 .hello #welcome_img {
     overflow: hidden;
     float: right;
-    padding: 100px;
+    margin-top: 100px;
+    margin-right: 100px;
     width: 40%;
     aspect-ratio: true;
 }
@@ -45,10 +46,11 @@
 .hello #welcome_text{
     font-family: 'Exo 2', sans-serif;
     float: left;
-    padding: 100px;
+    margin-top: 150px;
+    margin-left: 100px;
     overflow: none;
-    width: 400px;
-    font-size: 40px;
+    width: 550px;
+    font-size: 50px;
 }
 
 /*auto ajust the header when width of page is lower then 500px*/
