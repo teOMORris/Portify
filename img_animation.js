@@ -1,4 +1,4 @@
-var text = document.getElementById("welcome_text");
+var img = document.getElementById("welcome_img");
 
 text.onmousemove = function() {
     Resize("70px", "1s", "700px");
