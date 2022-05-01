@@ -33,27 +33,6 @@
     background-color: #4502e0;
 }
 
-.hello #welcome_img {
-    overflow: hidden;
-    float: right;
-    margin-top: 100px;
-    margin-right: 100px;
-    width: 40%;
-    aspect-ratio: true;
-}
-
-
-.hello #welcome_text{
-    font-family: 'Exo 2', sans-serif;
-    float: left;
-    margin-top: 150px;
-    margin-left: 100px;
-    overflow: none;
-    width: 550px;
-    font-size: "320%";
-}
-
-/*auto ajust the header when width of page is lower then 500px*/
 @media screen and (max-width:500px) {
 
     .header a{
@@ -64,17 +43,4 @@
     .header-right {
         float: none;
     }
-
-    .hello #welcomeText{
-        padding: 40px;
-    }
-
-    .hello #welcome_img {
-        float: left;
-        padding: 100px;
-        width: 80%;
-        aspect-ratio: true;
-    }
 }
-
-
