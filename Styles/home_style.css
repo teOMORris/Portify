@@ -19,15 +19,15 @@
 }
 
 /*auto ajust the header when width of page is lower then 500px*/
-@media screen and (max-width:1500px) {
+@media screen and (max-width:1200px) {
     .hello #welcomeText{
-        margin-top: 100px;
+        float: none;
     }
 
     .hello #welcome_img {
         margin-left: 100px;
-        float: left;
-        width: 80%;
+        float: none;
+        width: 100%;
         aspect-ratio: true;
     }
 }
