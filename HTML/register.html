@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
     <script type="module" src="/Script/register_behavior.js"></script>
+    <script type="module" src="/Script/sign-in.js"></script>
     <link rel="stylesheet" href="/Styles/header_style.css">
     <link rel="stylesheet" href="/Styles/register_style.css">
     
@@ -20,16 +21,19 @@
                 </div>
                 <div class="formular">
                     <div class="input">
-                        <input type="text" id="username" placeholder="Username" name="username"><br><br>
+                        <input type="text" id="username" placeholder="Username" name="username">
+                        <p id="error_username">text</p>
                     </div>
                     <div class="input">
-                        <input type="email"  id="email" placeholder="Email" name="email" ><br><br>
+                        <input type="email"  id="email" placeholder="Email" name="email" >
+                        <p id="error_email">text</p>
                     </div>
                     <div class="input">
-                        <input type="password" id="password" placeholder="Password" name="password"><br><br>
+                        <input type="password" id="password" placeholder="Password" name="password">
+                        <p id="error_password">text</p>
                     </div>
                     <div class="input">
-                        <input type="submit" id="submit" value="Sign-in">
+                        <button type="button" id="sign_in">Sign-in</button>
                     </div>
                 </div>
             </div>

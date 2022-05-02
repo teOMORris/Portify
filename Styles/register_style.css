@@ -50,28 +50,27 @@ h1 {
 }
 
 #backtohome{
-    position: fixed;
-    border-radius: 10px;
     top: 2%;
     left: 2%;
+}
+
+#sign_in {
+    width: 200px;
+    height: 40px;
+    margin-top: 2%;
+    margin-left: 25%;
 }
 
 .formular #l_username, #l_email, #l_password {
     font-size: 25px;
 }
 
-.formular #submit {
-    position: fixed;
-    left: 50%;
-    transform: translate(-50%, 0);
-    width: 100px;
-    height: 30px;
-}
-
 button{
     border: none;
     width: 100px;
     height: 20px;
+    position: fixed;
+    border-radius: 10px;
 }
 
 ::placeholder {
@@ -83,10 +82,17 @@ input{
     height: 40px;
     width: 400px;
     border: none;
+    margin: 5px;
     padding: 10px;
     border-radius: 10px;
 }
 
 input:hover{
     background-color: rgb(218, 218, 218);
+}
+
+p {
+    display:none;
+    font-size: 12px;
+    margin-left: 20px;
 }
