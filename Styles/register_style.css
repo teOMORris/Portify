@@ -74,10 +74,19 @@ button{
     height: 20px;
 }
 
+::placeholder {
+    font-size: 15px;
+    color: rgb(136, 136, 136);
+}
+
 input{
     height: 40px;
     width: 400px;
     border: none;
     padding: 10px;
     border-radius: 10px;
+}
+
+input:hover{
+    background-color: rgb(218, 218, 218);
 }
