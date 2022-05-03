@@ -96,3 +96,10 @@ p {
     font-size: 12px;
     margin-left: 20px;
 }
+
+.visibilityPassword{
+   cursor: pointer;
+   position: fixed;
+   padding: 25px;
+   right: 5%;
+}

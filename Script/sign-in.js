@@ -7,7 +7,24 @@ var e_error = document.getElementById("error_email");
 var password = document.getElementById("password");
 var pw_error = document.getElementById("error_password");
 
-///list of errors
+//show password or hide
+const visibility = document.getElementById("visibilityPassword");
+const icon = document.getElementById("icon");
+visibility.addEventListener("click",ShowPassword);
+
+function ShowPassword() {
+    console.log(password.textContent);
+    if(password.type === "password")
+    {
+        icon.textContent = "visibility";
+        password.type = "text";
+    }
+    else
+    {
+        icon.textContent = "visibility_off";
+        password.type = "password";
+    }
+}
 
 
 ///If sign-in button is clicked will be called verify function
@@ -44,7 +61,10 @@ signin_button.onclick = function () {
 
     if(Empty(password,"password",pw_error) === false)
     {
-
+        if(CorrectPassword() === false)
+        {
+            submit = false;
+        }
     }
     else {
         submit = false;
@@ -164,6 +184,56 @@ function CorrectEmail() {
     }
 
     return true;
+}
+
+
+//verify if password respect the rules
+function CorrectPassword()
+{
+    let uppercaseLetter = false;
+    let lowercaseLetter  = false;
+    let numbers = false;
+    for(let i = 0 ; i < password.value.length; i++)
+    {
+        //password should to contain at least uppercase letter
+        if(password.value[i] >= 'A' && password.value[i] <= 'Z')
+        {
+            uppercaseLetter = true;
+        }
+
+        //password should to contain at least lowercase letter 
+        if(password.value[i] >= 'a' && password.value[i] <= 'z')
+        {
+            lowercaseLetter = true;
+        }
+
+        //password should to contain numbers
+        if(password.value[i] >='1' && password.value[i] <= '9')
+        {
+            numbers = true;
+        }
+    }
+
+    if(uppercaseLetter === false)
+    {
+        pw_error.textContent = "Password should to contain at least uppercase letter";
+        pw_error.style.display = "flex";
+        return false
+    }
+
+    if(lowercaseLetter === false)
+    {
+        pw_error.textContent = "Password should to contain at least lowercase letter";
+        pw_error.style.display = "flex";
+        return false;
+    }
+
+    if(numbers === false)
+    {
+        pw_error.textContent = "Password should to contain at least number";
+        pw_error.style.display = "flex";
+        return false;
+    }
 }
 
 // hide all errors
