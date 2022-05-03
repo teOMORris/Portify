@@ -109,6 +109,50 @@ function CorrectUsername()
 //verify if an email is correct
 function CorrectEmail() {
     
+    let existEmailSymbol = 0;
+    let existDot = 0;
+
+    for(let i = 0; i < email.value.length; i++)
+    {
+        if(email.value[i] === '@')
+        {
+            existEmailSymbol++;
+        }
+
+        if(email.value[i] === '.')
+        {
+            existDot++;
+        }
+        
+        if(existDot > 1)
+        {
+            e_error.textContent = "Should to have just an dot";
+            e_error.style.display = "flex";
+            return false;
+        }
+        
+        if(existEmailSymbol > 1)
+        {
+            e_error.textContent ="Should to have just an email symbol";
+            e_error.style.display = "flex";
+            return false;
+        }
+    }
+
+    if(existEmailSymbol === 0)
+    {
+        e_error.textContent ="Should to have at least an email symbol";
+        e_error.style.display = "flex";
+        return false;
+    }
+
+    if(existDot === 0)
+    {
+        e_error.textContent ="Should to have at least a dot";
+        e_error.style.display = "flex";
+        return 0;
+    }
+
     for(let i = 0 ; i < email.value.length; i++)
     {
         if(email.value[i] >= 'A' && email.value[i] <= 'Z')
