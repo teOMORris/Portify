@@ -49,11 +49,6 @@ h1 {
     height: 400px;
 }
 
-#backtohome{
-    top: 2%;
-    left: 2%;
-}
-
 #sign_in {
     width: 200px;
     height: 40px;
@@ -68,7 +63,7 @@ h1 {
 button{
     border: none;
     width: 100px;
-    height: 20px;
+    height: 30px;
     position: fixed;
     border-radius: 10px;
 }
@@ -102,4 +97,19 @@ p {
    position: fixed;
    padding: 25px;
    right: 5%;
+}
+
+#home{
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(236, 214, 245);
+}
+
+p {
+    color: rgb(118, 2, 103);
+    font-family:'Exo 2', sans-serif;
+    margin-top: -1px;
+    margin-left: 14px;
 }
